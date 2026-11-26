@@ -1,0 +1,45 @@
+test_allocation_exceeds_max (tests.test_deadlock.TestInvalid.test_allocation_exceeds_max) ... ok
+test_bad_process_number (tests.test_deadlock.TestInvalid.test_bad_process_number) ... ok
+test_empty_matrices (tests.test_deadlock.TestInvalid.test_empty_matrices) ... ok
+test_negative_available (tests.test_deadlock.TestInvalid.test_negative_available) ... ok
+test_non_numeric_vector (tests.test_deadlock.TestInvalid.test_non_numeric_vector) ... ok
+test_wrong_vector_length (tests.test_deadlock.TestInvalid.test_wrong_vector_length) ... ok
+test_request_exceeds_available (tests.test_deadlock.TestRequests.test_request_exceeds_available) ... ok
+test_request_exceeds_need (tests.test_deadlock.TestRequests.test_request_exceeds_need) ... ok
+test_safe_request_granted (tests.test_deadlock.TestRequests.test_safe_request_granted) ... ok
+test_unsafe_request_denied (tests.test_deadlock.TestRequests.test_unsafe_request_denied) ... ok
+test_zero_request_is_fine (tests.test_deadlock.TestRequests.test_zero_request_is_fine) ... ok
+test_need_matrix (tests.test_deadlock.TestSafety.test_need_matrix) ... ok
+test_textbook_sample_is_safe (tests.test_deadlock.TestSafety.test_textbook_sample_is_safe) ... ok
+test_unsafe_state (tests.test_deadlock.TestSafety.test_unsafe_state) ... ok
+test_more_frames_than_pages (tests.test_memory.TestBoundary.test_more_frames_than_pages) ... ok
+test_one_frame_every_change_faults (tests.test_memory.TestBoundary.test_one_frame_every_change_faults) ... ok
+test_same_page_repeated (tests.test_memory.TestBoundary.test_same_page_repeated) ... ok
+test_empty_string (tests.test_memory.TestInvalid.test_empty_string) ... ok
+test_negative_page (tests.test_memory.TestInvalid.test_negative_page) ... ok
+test_non_numeric_input (tests.test_memory.TestInvalid.test_non_numeric_input) ... ok
+test_parse_commas (tests.test_memory.TestInvalid.test_parse_commas) ... ok
+test_zero_frames (tests.test_memory.TestInvalid.test_zero_frames) ... ok
+test_belady_anomaly (tests.test_memory.TestKnownResults.test_belady_anomaly) ... ok
+test_fifo (tests.test_memory.TestKnownResults.test_fifo) ... ok
+test_lru (tests.test_memory.TestKnownResults.test_lru) ... ok
+test_optimal (tests.test_memory.TestKnownResults.test_optimal) ... ok
+test_optimal_never_worse (tests.test_memory.TestKnownResults.test_optimal_never_worse) ... ok
+test_cpu_idle_gap (tests.test_scheduler.TestBoundary.test_cpu_idle_gap) ... ok
+test_quantum_larger_than_burst (tests.test_scheduler.TestBoundary.test_quantum_larger_than_burst) ... ok
+test_single_process (tests.test_scheduler.TestBoundary.test_single_process) ... ok
+test_duplicate_pid (tests.test_scheduler.TestInvalidInput.test_duplicate_pid) ... ok
+test_empty_list (tests.test_scheduler.TestInvalidInput.test_empty_list) ... ok
+test_negative_arrival (tests.test_scheduler.TestInvalidInput.test_negative_arrival) ... ok
+test_negative_burst (tests.test_scheduler.TestInvalidInput.test_negative_burst) ... ok
+test_zero_burst (tests.test_scheduler.TestInvalidInput.test_zero_burst) ... ok
+test_zero_quantum (tests.test_scheduler.TestInvalidInput.test_zero_quantum) ... ok
+test_averages (tests.test_scheduler.TestValidScheduling.test_averages) ... ok
+test_fcfs_waiting_time (tests.test_scheduler.TestValidScheduling.test_fcfs_waiting_time) ... ok
+test_round_robin_finish_times (tests.test_scheduler.TestValidScheduling.test_round_robin_finish_times) ... ok
+test_sjf_runs_shortest_ready_job_first (tests.test_scheduler.TestValidScheduling.test_sjf_runs_shortest_ready_job_first) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.010s
+
+OK

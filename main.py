@@ -9,6 +9,7 @@ from utils.logger import get_logger
 from utils.report import print_results, print_comparison
 from utils.validation import validate_processes, validate_quantum
 from modules.memory_cli import memory_menu
+from modules.deadlock_cli import deadlock_menu
 
 BASE = Path(__file__).resolve().parent
 SAMPLE = BASE / "data" / "sample_processes.json"
@@ -94,6 +95,7 @@ def main():
         print("3) Show current processes")
         print("4) Show real system info (Bash)")
         print("5) Memory: Page Replacement")
+        print("6) Deadlock: Banker's Algorithm")
         print("0) Exit")
         choice = input("Choose: ").strip()
         try:
@@ -109,6 +111,8 @@ def main():
                 log.info("Displayed system info")
             elif choice == "5":
                 memory_menu()
+            elif choice == "6":
+                deadlock_menu()
             elif choice == "0":
                 log.info("Simulator exited")
                 break

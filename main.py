@@ -1,5 +1,7 @@
 """OS Resource-Management Simulator"""
 import json
+import shutil
+import subprocess
 from pathlib import Path
 
 from modules import scheduler
@@ -71,6 +73,15 @@ def scheduling_menu(processes):
     else:
         print("Invalid choice.")
 
+def show_system_info():
+    if shutil.which("bash") is None:
+        print("Bash not found. Run this on Linux/WSL to see real system info.")
+        return
+    result = subprocess.run(
+        ["bash", str(BASE / "scripts" / "system_info.sh")],
+        capture_output=True, text=True)
+    print(result.stdout or result.stderr)
+
 
 def main():
     processes = load_sample()
@@ -80,6 +91,7 @@ def main():
         print("1) CPU Scheduling")
         print("2) Enter my own processes")
         print("3) Show current processes")
+        print("4) Show real system info (Bash)")
         print("0) Exit")
         choice = input("Choose: ").strip()
         try:
@@ -90,6 +102,9 @@ def main():
             elif choice == "3":
                 for p in processes:
                     print(p)
+            elif choice == "4":
+                show_system_info()
+                log.info("Displayed system info")
             elif choice == "0":
                 log.info("Simulator exited")
                 break

@@ -1,0 +1,18 @@
+test_cpu_idle_gap (tests.test_scheduler.TestBoundary.test_cpu_idle_gap) ... ok
+test_quantum_larger_than_burst (tests.test_scheduler.TestBoundary.test_quantum_larger_than_burst) ... ok
+test_single_process (tests.test_scheduler.TestBoundary.test_single_process) ... ok
+test_duplicate_pid (tests.test_scheduler.TestInvalidInput.test_duplicate_pid) ... ok
+test_empty_list (tests.test_scheduler.TestInvalidInput.test_empty_list) ... ok
+test_negative_arrival (tests.test_scheduler.TestInvalidInput.test_negative_arrival) ... ok
+test_negative_burst (tests.test_scheduler.TestInvalidInput.test_negative_burst) ... ok
+test_zero_burst (tests.test_scheduler.TestInvalidInput.test_zero_burst) ... ok
+test_zero_quantum (tests.test_scheduler.TestInvalidInput.test_zero_quantum) ... ok
+test_averages (tests.test_scheduler.TestValidScheduling.test_averages) ... ok
+test_fcfs_waiting_time (tests.test_scheduler.TestValidScheduling.test_fcfs_waiting_time) ... ok
+test_round_robin_finish_times (tests.test_scheduler.TestValidScheduling.test_round_robin_finish_times) ... ok
+test_sjf_runs_shortest_ready_job_first (tests.test_scheduler.TestValidScheduling.test_sjf_runs_shortest_ready_job_first) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
